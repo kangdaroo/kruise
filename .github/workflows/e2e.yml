@@ -13,8 +13,8 @@ jobs:
         echo $KUBECONFIG
         kubectl cluster-info
         kubectl get pods -n kube-system
-        kubectl apply -f ./config/crds/
-        kubectl apply -f ./config/manager/all_in_one.yaml
+        kubectl apply -f ./config/crd/
+        kubectl apply -f ./config/manager/
     - name: e2e-test
       run: |
         APP_PATH=/home/runner/go/src/github.com/openkruise/kruise

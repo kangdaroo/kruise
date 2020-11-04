@@ -54,6 +54,7 @@ func init() {
 	_ = appsv1alpha1.AddToScheme(clientgoscheme.Scheme)
 	_ = appsv1beta1.AddToScheme(clientgoscheme.Scheme)
 
+
 	_ = appsv1alpha1.AddToScheme(scheme)
 	_ = appsv1beta1.AddToScheme(scheme)
 	// +kubebuilder:scaffold:scheme
